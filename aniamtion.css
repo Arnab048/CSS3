@@ -1,0 +1,34 @@
+@keyframes slideIn {
+    0%{
+        left:0px;
+        top:0px;
+        background-color:yellow;
+    }
+    50%{
+        left:400px;
+        top:100px;
+        background-color: red;
+    }
+    100%{
+        left:800px;
+        top:0px;
+        background-color: grey;
+    }
+}
+
+.stage{
+    background-color: lightcyan;
+    height: 200px;
+    min-width: 800px;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    animation: slideIn 5s ease-in-out 1s infinite alternate;
+}
+
+
